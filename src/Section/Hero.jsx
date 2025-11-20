@@ -1,9 +1,9 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
-import Image from '../../src/assets/biswabangla-with-tram.jpeg';
+import Image from '../../src/assets/biswabangla-with-tram.webp';
 import Border from '../components/ui/Border';
-import apexLogo from '../../src/assets/Icon/apexlogo.png';
+import apexLogo from '../../src/assets/Icon/apexlogo.webp';
 import SocialIcons from '../components/ui/SocialIcon';
-import devfolio from '../../src/assets/Devfolio.png';
+import devfolio from '../../src/assets/Devfolio.webp';
 
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { SiBento } from 'react-icons/si';

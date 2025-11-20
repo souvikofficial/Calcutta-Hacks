@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { VintageCard } from '../Section/Tracks';
 import { Users, Calendar, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
-import apexLogo from '../assets/Community/apex.png';
+import apexLogo from '../assets/Community/apex.webp';
 
 const CommunityPartners = () => {
   const scrollContainerRef = useRef(null);

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Code, Landmark, Target, Sparkles, Bus, Award } from 'lucide-react';
 import GlareHover from '../components/ui/GlareHover';
-import web3 from '../../src/assets/Icon/web3.png';
-import heritage from '../../src/assets/Icon/heritage.png';
-import ai from '../../src/assets/Icon/AI.png';
-import cyber from '../../src/assets/Icon/cyberSecurity.png';
-import smartCity from '../../src/assets/Icon/smartCity.png';
+import web3 from '../../src/assets/Icon/web3.webp';
+import heritage from '../../src/assets/Icon/heritage.webp';
+import ai from '../../src/assets/Icon/AI.webp';
+import cyber from '../../src/assets/Icon/cyberSecurity.webp';
+import smartCity from '../../src/assets/Icon/smartCity.webp';
 
-import openInovation from '../../src/assets/Icon/openInovation.png';
+import openInovation from '../../src/assets/Icon/openInovation.webp';
 // Simple VintageCard component with vintage styling
-export const VintageCard = ({ children, className }) => {
+export const VintageCard = ({ children, className, innerClassName }) => {
   return (
     <div
       className={`bg-[#e0d1b0] border-4 border-[#3e2c1d] p-1 flex justify-center items-center mx-[2vw] my-[2vh] shadow-md ${className}`}
     >
-      <div className="relative z-10 bg-[#e7d7b7] flex flex-col h-[98%] w-[98%] ">{children}</div>
+      <div className={`relative z-10 bg-[#e7d7b7] flex flex-col h-[98%] w-[98%] ${innerClassName}`}>{children}</div>
     </div>
   );
 };
