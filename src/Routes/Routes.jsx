@@ -7,7 +7,7 @@ const AboutKolkata = lazy(() => import('../page/AboutKolkata'));
 
 // Loading fallback
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-[#ebdbb9]">
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#ebdbb9] w-full h-full">
     <div className="w-16 h-16 border-4 border-[#D4AF37] border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
