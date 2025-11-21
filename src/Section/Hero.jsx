@@ -33,6 +33,7 @@ const Hero = () => (
           <img
             src={Image}
             alt="Biswa Bangla with Tram"
+            fetchPriority="high"
             className="w-full h-auto max-h-[90vh] object-contain opacity-30"
             style={{
               maxWidth: '100%',
@@ -70,6 +71,7 @@ const Hero = () => (
           <img
             src={apexLogo}
             alt="Logo"
+            fetchPriority="high"
             className="mx-auto h-[5rem] w-[12rem] sm:h-20 sm:w-72 md:h-24 md:w-96 lg:h-24 lg:w-[24rem] object-contain"
           />
 

@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createBrowserRouter, ScrollRestoration, Outlet } from 'react-router-dom';
-import App from '../App';
-import AboutKolkata from '../page/AboutKolkata';
-import ContactForm from '../page/ContactPage';
+
+// Lazy load components
+const App = lazy(() => import('../App'));
+const AboutKolkata = lazy(() => import('../page/AboutKolkata'));
+
+// Loading fallback
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-[#ebdbb9]">
+    <div className="w-16 h-16 border-4 border-[#D4AF37] border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 // Root Layout Component
 const RootLayout = () => (
   <>
     <ScrollRestoration />
-    <Outlet />
+    <Suspense fallback={<PageLoader />}>
+      <Outlet />
+    </Suspense>
   </>
 );
 

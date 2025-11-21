@@ -31,4 +31,16 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'animation-vendor': ['framer-motion', 'gsap'],
+          'three-vendor': ['three', 'ogl'],
+          'ui-vendor': ['lucide-react', 'react-icons'],
+        },
+      },
+    },
+  },
 });
