@@ -26,20 +26,20 @@ function App() {
       <Navbar />
       <Hero />
       
-      <LazySection factory={About} />
-      <LazySection factory={Timeline} />
-      <LazySection factory={Tracks} />
-      <LazySection factory={PRIZES} />
-      <LazySection factory={Host} />
-      <LazySection factory={Cohost} />
+      <LazySection factory={About} id="about" />
+      <LazySection factory={Timeline} id="timeline" />
+      <LazySection factory={Tracks} id="tracks" />
+      <LazySection factory={PRIZES} id="prizes" />
+      <LazySection factory={Host} id="host" />
+      <LazySection factory={Cohost} id="cohost" />
       
-      <LazySection factory={Mentors} />
-      <LazySection factory={Judges} />
-      <LazySection factory={OurPartners} />
-      <LazySection factory={Team} />
-      <LazySection factory={CommunityPartners} />
+      <LazySection factory={Mentors} id="mentors" />
+      <LazySection factory={Judges} id="judges" />
+      <LazySection factory={OurPartners} id="sponsors" />
+      <LazySection factory={Team} id="team" />
+      <LazySection factory={CommunityPartners} id="partners" />
       <LazySection factory={AvatarCardGenerator} />
-      <LazySection factory={FAQ} />
+      <LazySection factory={FAQ} id="faq" />
       
       <Footer />
     </Theme>
