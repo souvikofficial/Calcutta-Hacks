@@ -1,6 +1,22 @@
-import React, { useState, useEffect, Suspense, useRef } from 'react';
+import React, { useState, useEffect, useLayoutEffect, Suspense, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useLocation } from 'react-router-dom';
+
+// Helper component to handle scrolling after Suspense resolves
+const ScrollToSection = ({ id }) => {
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    if (location.hash === `#${id}`) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [id, location.hash]);
+
+  return null;
+};
 
 const LazySection = ({ factory, fallback, id }) => {
   const [Component, setComponent] = useState(null);
@@ -40,24 +56,6 @@ const LazySection = ({ factory, fallback, id }) => {
     return () => clearTimeout(timer);
   }, [Component, factory]);
 
-  // Scroll to section when it loads if it's the target
-  useEffect(() => {
-    if (Component && location.hash === `#${id}`) {
-      // Timeout to ensure render and layout update
-      const timer = setTimeout(() => {
-        // Try to find the element by ID (which should be the inner component now)
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else if (containerRef.current) {
-          // Fallback to container if inner ID not found
-          containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 500);
-      return () => clearTimeout(timer);
-    }
-  }, [Component, location.hash, id]);
-
   // Only put the ID on the wrapper if the component hasn't loaded yet.
   // Once loaded, the inner component will have the ID (as per user request).
   // This prevents duplicate IDs in the DOM.
@@ -66,6 +64,7 @@ const LazySection = ({ factory, fallback, id }) => {
       {Component ? (
         <Suspense fallback={fallback || null}>
           <Component />
+          <ScrollToSection id={id} />
         </Suspense>
       ) : (
         fallback || <div className="h-20" />
