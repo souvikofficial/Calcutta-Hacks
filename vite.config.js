@@ -37,7 +37,7 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'animation-vendor': ['framer-motion', 'gsap'],
-          'three-vendor': ['three', 'ogl'],
+          'three-vendor': ['three'],
           'ui-vendor': ['lucide-react', 'react-icons'],
         },
       },
