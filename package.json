@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/post-build-optimize.js",
+    "optimize-assets": "node scripts/post-build-optimize.js",
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview"
