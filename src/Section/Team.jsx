@@ -186,7 +186,7 @@ const Team = () => {
       social: 'https://www.linkedin.com/in/anjali-tomar713',
     },
     {
-      name: 'Piuysh Goenka',
+      name: 'Piyush Goenka',
       role: 'Web Team Member',
       handle: 'Website development',
       color: '#3E2C1D',
