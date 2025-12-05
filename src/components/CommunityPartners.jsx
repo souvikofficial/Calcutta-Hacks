@@ -564,7 +564,7 @@ const CommunityPartners = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="font-serif text-[#6B4423] mb-4">
             Interested in becoming a community partner?
           </p>
@@ -576,7 +576,7 @@ const CommunityPartners = () => {
           >
             Become a Partner
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
