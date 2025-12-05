@@ -17,6 +17,8 @@ import VivekYadav from '../../src/assets/Team/VivekYadav.webp';
 import Subhasish from '../../src/assets/Team/Subhasish.webp';
 import Piush from '../../src/assets/Team/Piyush.webp';
 import Ritabrata from '../../src/assets/Team/Rito.webp';
+import Udity from '../../src/assets/Team/udity.webp';
+import PiyushGoenka from '../../src/assets/Team/piyushgoenka.webp';
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -113,7 +115,7 @@ const Team = () => {
       image: Naila,
       social: 'https://www.linkedin.com/in/nailafarooque/',
     },
-    
+
     // 🥉 3rd Hierarchy — PR & Outreach
     {
       name: 'Agnij Dutta',
@@ -131,7 +133,7 @@ const Team = () => {
       image: VivekYadav,
       social: 'https://www.linkedin.com/in/yadav-vivek123',
     },
-    
+
     // 🧩 4th Hierarchy — Management
     {
       name: 'Shreyashi Debnath',
@@ -149,7 +151,7 @@ const Team = () => {
       image: Rouson,
       social: 'https://www.linkedin.com/in/rouson-das-563b52284/',
     },
-    
+
     // 💬 5th Hierarchy — Social Media
     {
       name: 'Shuvrajit Majhi',
@@ -183,8 +185,24 @@ const Team = () => {
       image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
       social: 'https://www.linkedin.com/in/anjali-tomar713',
     },
+    {
+      name: 'Piyush Goenka',
+      role: 'Web Team Member',
+      handle: 'Website development',
+      color: '#3E2C1D',
+      image: PiyushGoenka,
+      social: 'https://www.linkedin.com/in/piyushgoenka2005/',
+    },
+    {
+      name: 'Udity Banerjee',
+      role: 'Web Designer',
+      handle: 'UI/UX Designer',
+      color: '#3E2C1D',
+      image: Udity,
+      social: '',
+    },
   ];
-  
+
   const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
