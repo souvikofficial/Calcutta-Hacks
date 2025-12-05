@@ -258,14 +258,6 @@ const CommunityPartners = () => {
       comingSoon: false,
     },
     {
-      name: 'Startup4nation',
-      note: 'Partner Community',
-      description: 'At Startup Nation, we specialize in transforming innovative ideas into real-world solutions.',
-      logo: startup4nation,
-      location: 'India',
-      comingSoon: false,
-    },
-    {
       name: 'Samarth TMSL',
       note: 'Partner Community',
       description: 'SAMARTH, the educational society of Techno Main Salt Lake, founded in 2019.',
