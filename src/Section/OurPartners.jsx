@@ -14,6 +14,7 @@ import beeceptor from '../../src/assets/Icon/beeceptor.webp';
 import magicui from '../../src/assets/Icon/magicui.webp';
 import nomoex from '../../src/assets/Icon/nomoex.webp';
 import decloudx from '../../src/assets/Icon/decloudx.webp';
+import requestly from '../../src/assets/Icon/requestly.webp';
 
 const categories = {
   diamondspn: {
@@ -35,6 +36,17 @@ const categories = {
         logo: decloudx,
         link: 'https://decloudx.com/',
         tagline: 'The Decentralized Cloud Platform Powering Web3',
+      }
+    ],
+  },
+  trackspn: {
+    name: 'Track Sponsors',
+    partners: [
+      {
+        name: 'Requestly',
+        logo: requestly,
+        link: 'https://requestly.com/',
+        tagline: 'Lightweight Git-Friendly API Client Built for Modern Developers',
       }
     ],
   },
@@ -274,6 +286,9 @@ const OurPartners = () => {
 
         {/* Platinum Sponsor */}
         <SponsorCard category="platinumspn" />
+
+        {/* Track Sponsor */}
+        <SponsorCard category="trackspn" />
 
         {/* Silver Sponsor */}
         <SponsorCard category="silverspn" />
