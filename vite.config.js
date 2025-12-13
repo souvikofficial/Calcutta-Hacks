@@ -9,9 +9,9 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // ViteWebp.default({
-    //   extensions: ["png", "jpg", "jpeg", "PNG", "JPG", "JPEG"]
-    // }),
+    ViteWebp.default({
+      extensions: ["png", "jpg", "jpeg", "PNG", "JPG", "JPEG"]
+    }),
     ViteImageOptimizer({
       // Optimize and convert images to WebP
       webp: {
