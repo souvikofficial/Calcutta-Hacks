@@ -7,7 +7,7 @@ import Pritham from '../../src/assets/Team/pritham.webp';
 import Pushkar from '../../src/assets/Team/pushkarDas.webp';
 import Rouson from '../../src/assets/Team/Rouson.webp';
 import Shreyanshi from '../../src/assets/Team/Shreyanshi.webp';
-import somnath from '../../src/assets/Team/somnath.png';
+import somnath from '../../src/assets/Team/Somnath.webp';
 import Soumodweep from '../../src/assets/Team/Soumodweep.webp';
 import Souvik from '../../src/assets/Team/Souvik.webp';
 import Yuvraj from '../../src/assets/Team/yuvraj.webp';
