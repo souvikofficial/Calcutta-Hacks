@@ -192,7 +192,7 @@ const AvatarCardGenerator = () => {
     ctx.textAlign = 'center';
     ctx.fillText('CALCUTTA <HACKS/>', 400, 110);
     ctx.font = '26px serif';
-    ctx.fillText('13-14 December 2025', 400, 155);
+  ctx.fillText('27-28 December 2025', 400, 155);
 
     // Outer decorative ring for avatar
     ctx.beginPath();
@@ -512,7 +512,7 @@ const AvatarCardGenerator = () => {
                   <div className="font-display text-lg md:text-xl font-bold text-white tracking-widest mb-1">
                     CALCUTTA &lt;HACKS/&gt;
                   </div>
-                  <div className="font-serif text-xs text-white/90">13-14 December 2025</div>
+                  <div className="font-serif text-xs text-white/90">27-28 December 2025</div>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#6B4423]"></div>
                 </div>
 

@@ -76,7 +76,13 @@ pnpm install
 ## 🛠️ Contributing
 
 We welcome contributions from the community!  
-Please feel free to **submit issues or pull requests**.
+
+Go by The following steps:  
+1: Fork this Repo  
+2: Make your changes  
+3: Create a PR to this repo in **dev** Branch only. Else merge wont be possible  
+
+NOTE: Please mention all the changes made in the PR description
 
 ---
 

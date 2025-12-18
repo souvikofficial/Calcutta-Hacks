@@ -1,14 +1,55 @@
 import React from 'react';
 import { Map, MapPin, Award } from 'lucide-react';
-import bolt from '../../src/assets/Icon/bolt.png';
-import ETH from '../../src/assets/Icon/ethIndia.png';
-import codecrafter from '../../src/assets/Icon/codecrafter.png';
-import xyz from '../../src/assets/Icon/.xyz.png';
-import interviewbuddy from '../../src/assets/Icon/interviewbuddy.png';
-import loveable from '../../src/assets/Icon/loveable.png';
-import elevenlabs from '../../src/assets/Icon/elevenlabs.png';
+import bolt from '../../src/assets/Icon/bolt.webp';
+import ETH from '../../src/assets/Icon/ethIndia.webp';
+import codecrafter from '../../src/assets/Icon/codecrafter.webp';
+import xyz from '../../src/assets/Icon/.xyz.webp';
+import interviewbuddy from '../../src/assets/Icon/interviewbuddy.webp';
+import loveable from '../../src/assets/Icon/loveable.webp';
+import elevenlabs from '../../src/assets/Icon/elevenlabs.webp';
+import axicov from '../../src/assets/Icon/axicov.webp';
+import drop from '../../src/assets/Icon/drop.webp';
+import keploy from '../../src/assets/Icon/keploy.webp';
+import beeceptor from '../../src/assets/Icon/beeceptor.webp';
+import magicui from '../../src/assets/Icon/magicui.webp';
+import nomoex from '../../src/assets/Icon/nomoex.webp';
+import decloudx from '../../src/assets/Icon/decloudx.webp';
+import requestly from '../../src/assets/Icon/requestly.webp';
 
 const categories = {
+  diamondspn: {
+    name: 'Diamond Sponsors',
+    partners: [
+      {
+        name: 'Nomoex',
+        logo: nomoex,
+        link: 'https://nomoex.com/',
+        tagline: 'The Future of Crypto Trading',
+      }
+    ],
+  },
+  platinumspn: {
+    name: 'Platinum Sponsors',
+    partners: [
+      {
+        name: 'DeCloudX',
+        logo: decloudx,
+        link: 'https://decloudx.com/',
+        tagline: 'The Decentralized Cloud Platform Powering Web3',
+      }
+    ],
+  },
+  trackspn: {
+    name: 'Track Sponsors',
+    partners: [
+      {
+        name: 'Requestly',
+        logo: requestly,
+        link: 'https://requestly.com/',
+        tagline: 'Lightweight Git-Friendly API Client Built for Modern Developers',
+      }
+    ],
+  },
   silverspn: {
     name: 'Silver Sponsors',
     partners: [
@@ -18,28 +59,29 @@ const categories = {
         link: 'https://ethindia2024.devfolio.co/overview',
         tagline: 'Empowering the future of hackathons',
       },
-    ],
-  },
-  vibingptn: {
-    name: 'Vibing Partner',
-    partners: [
       {
-        name: 'Lovable',
-        logo: loveable,
-        link: 'https://lovable.dev/',
-        tagline: 'Create apps and websites by chatting with AI',
+        name: 'Axicov',
+        logo: axicov,
+        link: 'https://axicov.com/',
+        tagline: 'Explore The Agentic Economy',
+      },
+      {
+        name: 'Keploy',
+        logo: keploy,
+        link: 'https://keploy.io/',
+        tagline: 'AI Generated Tests that actually matter',
+      },
+      {
+        name: 'The Drop Organization',
+        logo: drop,
+        link: 'https://drop.org.in/',
+        tagline: 'Master In-Demand Skills with Our Online Course & Secure Your Future!',
       },
     ],
   },
-  buildingptn: {
-    name: 'Building Partners',
+  audioaiptn: {
+    name: 'AudioAI Partner',
     partners: [
-      {
-        name: 'Bolt.new',
-        logo: bolt,
-        link: 'https://bolt.new/',
-        tagline: 'Create stunning apps & websites by chatting with AI',
-      },
       {
         name: 'ElevenLabs',
         logo: elevenlabs,
@@ -48,8 +90,25 @@ const categories = {
       },
     ],
   },
-  educationspn: {
-    name: 'Education Sponsors',
+  vibingptn: {
+    name: 'Vibing Partners',
+    partners: [
+      {
+        name: 'Lovable',
+        logo: loveable,
+        link: 'https://lovable.dev/',
+        tagline: 'Create apps and websites by chatting with AI',
+      },
+      {
+        name: 'Bolt.new',
+        logo: bolt,
+        link: 'https://bolt.new/',
+        tagline: 'Create stunning apps & websites by chatting with AI',
+      },
+    ],
+  },
+  educationptn: {
+    name: 'Education Partners',
     partners: [
       {
         name: 'Codecrafters',
@@ -65,8 +124,25 @@ const categories = {
       },
     ],
   },
-  domainspn: {
-    name: 'Domain Sponsor',
+  utilityptn: {
+    name: 'Utility Partners',
+    partners: [
+      {
+        name: 'Beeceptor',
+        logo: beeceptor,
+        link: 'https://beeceptor.com/?utm_source=hackathon&utm_campaign=tiu_calcuttahacks',
+        tagline: 'Mock APIs made easy with AI.',
+      },
+      {
+        name: 'Magic UI',
+        logo: magicui,
+        link: 'https://pro.magicui.design/',
+        tagline: 'UI library for Design Engineers.',
+      }
+    ],
+  },
+  domainptn: {
+    name: 'Domain Partner',
     partners: [
       {
         name: 'Gen xyz',
@@ -205,20 +281,32 @@ const OurPartners = () => {
           </div>
         </VintageCard>
 
+        {/* Diamond Sponsor */}
+        <SponsorCard category="diamondspn" />
+
+        {/* Platinum Sponsor */}
+        <SponsorCard category="platinumspn" />
+
+        {/* Track Sponsor */}
+        <SponsorCard category="trackspn" />
+
         {/* Silver Sponsor */}
         <SponsorCard category="silverspn" />
+
+        {/* AudioAI Partner */}
+        <SponsorCard category="audioaiptn" />
 
         {/* Vibing Partner */}
         <SponsorCard category="vibingptn" />
 
-        {/* Creative Partner */}
-        <SponsorCard category="buildingptn" />
+        {/* Education Partners */}
+        <SponsorCard category="educationptn" />
 
-        {/* Education Sponsors */}
-        <SponsorCard category="educationspn" />
+        {/* AI Utility Partner */}
+        <SponsorCard category="utilityptn" />
 
-        {/* Domain Sponsor */}
-        <SponsorCard category="domainspn" />
+        {/* Domain Partner */}
+        <SponsorCard category="domainptn" />
 
         {/* Partner CTA */}
         <div className="text-center">

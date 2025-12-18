@@ -8,12 +8,12 @@ const FAQ = () => {
     {
       question: 'What is Calcutta <Hacks/>?',
       answer:
-        'Calcutta <Hacks/> is a 24-hour hackathon celebrating the heritage of Kolkata while fostering innovation and creativity. It brings together 200+ hackers to build innovative solutions and network with industry experts.',
+        'Calcutta <Hacks/> is a 24-hour hackathon celebrating the heritage of Kolkata while fostering innovation and creativity. It brings together 160 hackers to build innovative solutions and network with industry experts.',
     },
     {
       question: 'When and where is the event?',
       answer:
-        'The hackathon will be held on 13th-14th December 2025 at Techno India University, Saltlake Sector V, Kolkata, West Bengal.',
+        'The hackathon will be held on 27th-28th December 2025 at Techno India University, Saltlake Sector V, Kolkata, West Bengal.',
     },
     {
       question: 'Who can participate?',

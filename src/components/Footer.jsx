@@ -67,7 +67,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center mb-3 font-serif">
               <Calendar className="mr-2 text-[#D4AF37]" size={16} />
-              <span>December 13-14, 2025</span>
+              <span>December 27-28, 2025</span>
             </div>
             <div className="flex items-start mb-3 font-serif">
               <MapPin className="mr-2 text-[#D4AF37] mt-1 flex-shrink-0" size={16} />

@@ -1,9 +1,9 @@
 import { Calendar, MapPin, Users, ChevronRight } from 'lucide-react';
-import Image from '../../src/assets/biswabangla-with-tram.jpeg';
+import Image from '../../src/assets/biswabangla-with-tram.webp';
 import Border from '../components/ui/Border';
-import apexLogo from '../../src/assets/Icon/apexlogo.png';
+import apexLogo from '../../src/assets/Icon/apexlogo.webp';
 import SocialIcons from '../components/ui/SocialIcon';
-import devfolio from '../../src/assets/Devfolio.png';
+import devfolio from '../../src/assets/Devfolio.webp';
 
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { SiBento } from 'react-icons/si';
@@ -33,6 +33,7 @@ const Hero = () => (
           <img
             src={Image}
             alt="Biswa Bangla with Tram"
+            fetchPriority="high"
             className="w-full h-auto max-h-[90vh] object-contain opacity-30"
             style={{
               maxWidth: '100%',
@@ -70,6 +71,7 @@ const Hero = () => (
           <img
             src={apexLogo}
             alt="Logo"
+            fetchPriority="high"
             className="mx-auto h-[5rem] w-[12rem] sm:h-20 sm:w-72 md:h-24 md:w-96 lg:h-24 lg:w-[24rem] object-contain"
           />
 
@@ -105,7 +107,7 @@ const Hero = () => (
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-8">
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
               <Calendar className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span className="font-medium">13-14 Dec 2025</span>
+              <span className="font-medium">27-28 Dec 2025</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lg">
@@ -115,7 +117,7 @@ const Hero = () => (
             <div className="hidden md:block w-px h-6 bg-[#3E2C1D]"></div>
             <div className="flex items-center gap-2 font-serif text-base md:text-lgs">
               <Users className="text-[#6B4423] flex-shrink-0" size={20} />
-              <span className="font-medium">160+ Hackers</span>
+              <span className="font-medium">160 Hackers</span>
             </div>
           </div>
 

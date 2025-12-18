@@ -57,7 +57,7 @@ const Timeline = () => {
           <div className="flex items-center space-x-4">
             <FaCalendarAlt className="text-2xl text-[#3e2d1c]" />
             <div className="text-lg font-bold text-[#3e2d1c]">
-              {activeTab === 0 ? 'December 13, 2025' : 'December 14, 2025'}
+              {activeTab === 0 ? 'December 27, 2025' : 'December 28, 2025'}
             </div>
           </div>
         </div>

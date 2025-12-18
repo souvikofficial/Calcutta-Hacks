@@ -1,22 +1,24 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import Abhishek from '../../src/assets/Team/AbhishekBan.jpg';
-import Agnij from '../../src/assets/Team/Agnij.jpg';
-import Naila from '../../src/assets/Team/Naila.jpg';
+import Abhishek from '../../src/assets/Team/AbhishekBan.webp';
+import Agnij from '../../src/assets/Team/Agnij.webp';
+import Naila from '../../src/assets/Team/Naila.webp';
 import Pritham from '../../src/assets/Team/pritham.webp';
-import Pushkar from '../../src/assets/Team/pushkarDas.jpg';
-import Rouson from '../../src/assets/Team/Rouson.jpg';
-import Shreyanshi from '../../src/assets/Team/Shreyanshi.jpg';
-import Somnath from '../../src/assets/Team/Somnath.jpg';
-import Soumodweep from '../../src/assets/Team/Soumodweep.png';
-import Souvik from '../../src/assets/Team/Souvik.jpg';
-import Yuvraj from '../../src/assets/Team/yuvraj.jpg';
-import Shuvrajit from '../../src/assets/Team/Shuvrajit.jpg';
-import AbhishekGupta from '../../src/assets/Team/AbhishekGupta.jpg';
-import VivekYadav from '../../src/assets/Team/VivekYadav.jpeg';
-import Subhasish from '../../src/assets/Team/Subhasish.jpg';
-import Piush from '../../src/assets/Team/Piyush.jpg';
-import Ritabrata from '../../src/assets/Team/Rito.jpg';
+import Pushkar from '../../src/assets/Team/pushkarDas.webp';
+import Rouson from '../../src/assets/Team/Rouson.webp';
+import Shreyanshi from '../../src/assets/Team/Shreyanshi.webp';
+import Somnath from '../../src/assets/Team/Somnath.webp';
+import Soumodweep from '../../src/assets/Team/Soumodweep.webp';
+import Souvik from '../../src/assets/Team/Souvik.webp';
+import Yuvraj from '../../src/assets/Team/yuvraj.webp';
+import Shuvrajit from '../../src/assets/Team/Shuvrajit.webp';
+import AbhishekGupta from '../../src/assets/Team/AbhishekGupta.webp';
+import VivekYadav from '../../src/assets/Team/VivekYadav.webp';
+import Subhasish from '../../src/assets/Team/Subhasish.webp';
+import Piush from '../../src/assets/Team/Piyush.webp';
+import Ritabrata from '../../src/assets/Team/Rito.webp';
+import Udity from '../../src/assets/Team/udity.webp';
+import PiyushGoenka from '../../src/assets/Team/piyushgoenka.webp';
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -113,7 +115,7 @@ const Team = () => {
       image: Naila,
       social: 'https://www.linkedin.com/in/nailafarooque/',
     },
-    
+
     // 🥉 3rd Hierarchy — PR & Outreach
     {
       name: 'Agnij Dutta',
@@ -131,7 +133,7 @@ const Team = () => {
       image: VivekYadav,
       social: 'https://www.linkedin.com/in/yadav-vivek123',
     },
-    
+
     // 🧩 4th Hierarchy — Management
     {
       name: 'Shreyashi Debnath',
@@ -149,7 +151,7 @@ const Team = () => {
       image: Rouson,
       social: 'https://www.linkedin.com/in/rouson-das-563b52284/',
     },
-    
+
     // 💬 5th Hierarchy — Social Media
     {
       name: 'Shuvrajit Majhi',
@@ -183,8 +185,24 @@ const Team = () => {
       image: 'https://avatars.githubusercontent.com/u/160884550?v=4',
       social: 'https://www.linkedin.com/in/anjali-tomar713',
     },
+    {
+      name: 'Piyush Goenka',
+      role: 'Web Team Member',
+      handle: 'Website development',
+      color: '#3E2C1D',
+      image: PiyushGoenka,
+      social: 'https://www.linkedin.com/in/piyushgoenka2005/',
+    },
+    {
+      name: 'Udity Banerjee',
+      role: 'Web Designer',
+      handle: 'UI/UX Designer',
+      color: '#3E2C1D',
+      image: Udity,
+      social: '',
+    },
   ];
-  
+
   const getSocialIcon = url => {
     if (url.includes('linkedin')) return <Linkedin size={20} />;
     if (url.includes('github')) return <Github size={20} />;
