@@ -15,6 +15,11 @@ import magicui from '../../src/assets/Icon/magicui.webp';
 import nomoex from '../../src/assets/Icon/nomoex.webp';
 import decloudx from '../../src/assets/Icon/decloudx.webp';
 import requestly from '../../src/assets/Icon/requestly.webp';
+import aws from '../../src/assets/Icon/aws.webp';
+import devfolio from '../../src/assets/Icon/devfolio.webp';
+import duality from '../../src/assets/Icon/duality.webp';
+import dodo from '../../src/assets/Icon/dodo.webp';
+import n8n from '../../src/assets/Icon/n8n.webp';
 
 const categories = {
   diamondspn: {
@@ -39,6 +44,17 @@ const categories = {
       }
     ],
   },
+  inasw: {
+    name: 'In association with',
+    partners: [
+      {
+        name: 'AWS',
+        logo: aws,
+        link: 'https://aws.training/',
+        tagline: 'Build your future in the AWS Cloud.',
+      }
+    ],
+  },
   trackspn: {
     name: 'Track Sponsors',
     partners: [
@@ -54,10 +70,22 @@ const categories = {
     name: 'Silver Sponsors',
     partners: [
       {
+        name: 'Devfolio',
+        logo: devfolio,
+        link: 'https://devfolio.co/',
+        tagline: 'We love software and the people who build it.',
+      },
+      {
         name: 'ETH India',
         logo: ETH,
         link: 'https://ethindia2024.devfolio.co/overview',
         tagline: 'Empowering the future of hackathons',
+      },
+      {
+        name: 'Duality',
+        logo: duality,
+        link: 'https://duality.ai/',
+        tagline: 'Virtual Worlds for Solving Real Problems',
       },
       {
         name: 'Axicov',
@@ -128,6 +156,18 @@ const categories = {
     name: 'Utility Partners',
     partners: [
       {
+        name: 'Dodo Payments',
+        logo: dodo,
+        link: 'https://dodopayments.com/',
+        tagline: 'Payments & Billing Platform for SaaS, AI and Digital Products.',
+      },
+      {
+        name: 'n8n',
+        logo: n8n,
+        link: 'https://n8n.io/',
+        tagline: 'Flexible AI workflow automation for technical teams.',
+      },
+      {
         name: 'Beeceptor',
         logo: beeceptor,
         link: 'https://beeceptor.com/?utm_source=hackathon&utm_campaign=tiu_calcuttahacks',
@@ -138,12 +178,7 @@ const categories = {
         logo: magicui,
         link: 'https://pro.magicui.design/',
         tagline: 'UI library for Design Engineers.',
-      }
-    ],
-  },
-  domainptn: {
-    name: 'Domain Partner',
-    partners: [
+      },
       {
         name: 'Gen xyz',
         logo: xyz,
@@ -287,6 +322,9 @@ const OurPartners = () => {
         {/* Platinum Sponsor */}
         <SponsorCard category="platinumspn" />
 
+        {/* In Association With */}
+        <SponsorCard category="inasw" />
+
         {/* Track Sponsor */}
         <SponsorCard category="trackspn" />
 
@@ -304,9 +342,6 @@ const OurPartners = () => {
 
         {/* AI Utility Partner */}
         <SponsorCard category="utilityptn" />
-
-        {/* Domain Partner */}
-        <SponsorCard category="domainptn" />
 
         {/* Partner CTA */}
         <div className="text-center">
