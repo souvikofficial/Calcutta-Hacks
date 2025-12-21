@@ -7,7 +7,7 @@ import Pritham from '../../src/assets/Team/pritham.webp';
 import Pushkar from '../../src/assets/Team/pushkarDas.webp';
 import Rouson from '../../src/assets/Team/Rouson.webp';
 import Shreyanshi from '../../src/assets/Team/Shreyanshi.webp';
-import Somnath from '../../src/assets/Team/Somnath.webp';
+import somnath from '../../src/assets/Team/Somnath.webp';
 import Soumodweep from '../../src/assets/Team/Soumodweep.webp';
 import Souvik from '../../src/assets/Team/Souvik.webp';
 import Yuvraj from '../../src/assets/Team/yuvraj.webp';
@@ -17,7 +17,7 @@ import VivekYadav from '../../src/assets/Team/VivekYadav.webp';
 import Subhasish from '../../src/assets/Team/Subhasish.webp';
 import Piush from '../../src/assets/Team/Piyush.webp';
 import Ritabrata from '../../src/assets/Team/Rito.webp';
-import Udity from '../../src/assets/Team/udity.webp';
+import shantanu from '../../src/assets/Team/shantanu.webp';
 import PiyushGoenka from '../../src/assets/Team/piyushgoenka.webp';
 import TiltedCard from '../components/ui/TiltedCard';
 import { Linkedin, Twitter, Github } from 'lucide-react';
@@ -104,7 +104,7 @@ const Team = () => {
       role: 'Web Lead',
       handle: 'Development & Infrastructure',
       color: '#3E2C1D',
-      image: Somnath,
+      image: somnath,
       social: 'https://www.linkedin.com/in/somnath-mukherjee-8b629b288/',
     },
     {
@@ -115,7 +115,14 @@ const Team = () => {
       image: Naila,
       social: 'https://www.linkedin.com/in/nailafarooque/',
     },
-
+{
+      name: 'Shantanu Mahato',
+      role: 'Design Lead',
+      handle: 'UI/UX Designer',
+      color: '#3E2C1D',
+      image: shantanu,
+      social: 'https://www.linkedin.com/in/shantanu-mahato-396462289?',
+    },
     // 🥉 3rd Hierarchy — PR & Outreach
     {
       name: 'Agnij Dutta',
@@ -193,14 +200,7 @@ const Team = () => {
       image: PiyushGoenka,
       social: 'https://www.linkedin.com/in/piyushgoenka2005/',
     },
-    {
-      name: 'Udity Banerjee',
-      role: 'Web Designer',
-      handle: 'UI/UX Designer',
-      color: '#3E2C1D',
-      image: Udity,
-      social: '',
-    },
+    
   ];
 
   const getSocialIcon = url => {
