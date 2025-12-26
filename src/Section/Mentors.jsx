@@ -4,6 +4,8 @@ import soumojit from '../assets/Judge-mentors/soumojit.webp'
 import amit from '../assets/Judge-mentors/amit.webp'
 import roshan from '../assets/Judge-mentors/roshan.webp'
 import abhirup from '../assets/Judge-mentors/abhirup.webp'
+import sachindra from '../assets/Judge-mentors/sachindra.webp'
+import apabrita from '../assets/Judge-mentors/apabrita.webp'
 
 const Mentors = () => {
   const mentors = [
@@ -42,6 +44,24 @@ const Mentors = () => {
       imageSrc: abhirup,
       specialty: 'Co-Founder @AXICOV',
       linkedin: 'https://www.linkedin.com/in/abhirup-banerjee-651537223/',
+    },
+    {
+      name: 'Sachindra Singh',
+      role: 'SWE @EngageOS',
+      badge: 'MERN, Solidity',
+      emoji: '🎨',
+      imageSrc: sachindra,
+      specialty: '14x Hackathon Winner 🏆 | Ex - AlchemystAI, QuillAI Network',
+      linkedin: 'https://www.linkedin.com/in/singhsach/',
+    },
+    {
+      name: 'Apabrita Sarkar',
+      role: 'AI & Cloud Intern',
+      badge: 'Web & Cloud',
+      emoji: '🎨',
+      imageSrc: apabrita,
+      specialty: 'Smart India Hackathon’24 Finalist',
+      linkedin: 'https://www.linkedin.com/in/apabritasarkar/',
     },
   ];
 
