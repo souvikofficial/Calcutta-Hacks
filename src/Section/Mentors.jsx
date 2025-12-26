@@ -1,47 +1,47 @@
 import React from 'react';
 import TiltedCard from '../components/ui/TiltedCard';
-import { Card } from './Judges';
+import soumojit from '../assets/Judge-mentors/soumojit.webp'
+import amit from '../assets/Judge-mentors/amit.webp'
+import roshan from '../assets/Judge-mentors/roshan.webp'
+import abhirup from '../assets/Judge-mentors/abhirup.webp'
 
 const Mentors = () => {
   const mentors = [
     {
-      name: 'Aarav Mehta',
+      name: 'Soumojit Shome',
       role: 'Full‑Stack Engineer',
       badge: 'Web & Cloud',
       emoji: '🧑‍💻',
-      imageSrc: 'https://i.pinimg.com/originals/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg',
-      specialty: 'React, Node.js, AWS',
-      linkedin: 'https://linkedin.com',
+      imageSrc: soumojit,
+      specialty: 'Co-Founder & System Engineer at LastMinuteEngineering',
+      linkedin: 'https://www.linkedin.com/in/soumojit-shome/',
     },
     {
-      name: 'Riya Sen',
-      role: 'AI/ML Researcher',
-      badge: 'GenAI & Vision',
+      name: 'Amit Barnwal',
+      role: 'Commercial Manager',
+      badge: 'Business Operations',
       emoji: '🤖',
-      imageSrc:
-        'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthispix.com%2Fwp-content%2Fuploads%2F2015%2F06%2Fpassport-023.jpg&f=1&nofb=1&ipt=f41f557698c48f98ec9b50d56f7ac818cdfed809238ae924f449aa2cf19c5717',
-      specialty: 'PyTorch, Computer Vision',
-      linkedin: 'https://linkedin.com',
+      imageSrc: amit,
+      specialty: 'Business Operations, Management & Expense Control',
+      linkedin: 'https://www.linkedin.com/in/amit-barnwal-193402220/',
     },
     {
-      name: 'Kabir Das',
+      name: 'Roshan Burnwal',
       role: 'Security Architect',
       badge: 'Cybersecurity',
       emoji: '🛡️',
-      imageSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-qeOL2c7j2wEnTOKiMvA0EuJ0s5y2I66S2JPF8U5vszQ05nvRJgk-9e921GMBqVUKeo&usqp=CAU',
-      specialty: 'Pentesting, Blockchain Security',
-      linkedin: 'https://linkedin.com',
+      imageSrc: roshan,
+      specialty: 'Founder CEO @ The DROP Organization',
+      linkedin: 'https://www.linkedin.com/in/roshan-burnwal-ceo-of-drop/',
     },
     {
-      name: 'Meera Iyer',
-      role: 'Product Designer',
-      badge: 'UX & Systems',
+      name: 'Abhirup Banerjee',
+      role: 'Blockchain Developer',
+      badge: 'Blockchain',
       emoji: '🎨',
-      imageSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXc1hbQctKmCYvLezPKBTcQkdZmTaCbaSQ2w&s',
-      specialty: 'Figma, Design Systems',
-      linkedin: 'https://linkedin.com',
+      imageSrc: abhirup,
+      specialty: 'Co-Founder @AXICOV',
+      linkedin: 'https://www.linkedin.com/in/abhirup-banerjee-651537223/',
     },
   ];
 
@@ -58,58 +58,64 @@ const Mentors = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {mentors.map((mentor, index) => (
             <div key={index} className="flex justify-center group">
               <div className="relative">
-                <div className="absolute -top-2 -left-2 w-10 h-10 border-t-4 border-l-4 border-[#D4AF37] rounded-tl-lg z-10"></div>
-                <div className="absolute -top-2 -right-2 w-10 h-10 border-t-4 border-r-4 border-[#D4AF37] rounded-tr-lg z-10"></div>
-                <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-4 border-l-4 border-[#D4AF37] rounded-bl-lg z-10"></div>
-                <div className="absolute -bottom-2 -right-2 w-10 h-10 border-b-4 border-r-4 border-[#D4AF37] rounded-br-lg z-10"></div>
 
                 <div className="absolute inset-0 translate-y-4 translate-x-4 bg-[#3E2C1D]/20 blur-md rounded-lg transform transition-all duration-500 group-hover:translate-y-6 group-hover:translate-x-6"></div>
 
-                {/* Coming Soon Cards */}
-                <div className="group [perspective:1000px]">
-                  <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
-                    <Card className="bg-[#ebdbb9]">
-                      <div className="flex flex-col items-center text-center py-16">
-                        <div className="font-display text-2xl font-bold text-[#3E2C1D]">
-                          Coming Soon...
+                <TiltedCard
+                  imageSrc={mentor.imageSrc}
+                  altText={mentor.name}
+                  captionText={mentor.name}
+                  containerHeight="420px"
+                  containerWidth="100%"
+                  imageHeight="380px"
+                  imageWidth="280px"
+                  rotateAmplitude={10}
+                  scaleOnHover={1.05}
+                  showMobileWarning={false}
+                  showTooltip={false}
+                  displayOverlayContent={true}
+                  overlayContent={
+                    <div className="w-[280px] h-[380px] flex flex-col justify-end p-6 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-[15px]">
+                      <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="px-3 py-1 bg-[#D4AF37] text-[#3E2C1D] text-xs font-bold rounded-full shadow-lg">
+                            {mentor.badge}
+                          </span>
                         </div>
+                        <h3 className="font-display text-2xl font-bold text-[#F4E5C2] mb-1 drop-shadow-md">
+                          {mentor.name}
+                        </h3>
+                        <p className="font-serif text-[#D4AF37] mb-2 font-medium">{mentor.role}</p>
+                        <p className="text-sm text-gray-200 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                          {mentor.specialty}
+                        </p>
+                        <a
+                          href={mentor.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-[#F4E5C2] hover:text-[#D4AF37] transition-colors"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <span className="mr-2 font-bold">Connect</span>
+                          <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                          </svg>
+                        </a>
                       </div>
-                    </Card>
-                    <div
-                      className="absolute inset-0 rounded-lg ring-1 ring-[#6B44234D] translate-y-2 blur-sm opacity-0 group-hover:opacity-100 transition"
-                      aria-hidden
-                    ></div>
-                  </div>
-                </div>
-                {/* Tilted Card  Apply Here */}
+                    </div>
+                  }
+                />
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <button className="relative inline-flex items-center px-8 py-3 bg-[#3E2C1D] border-2 border-[#3E2C1D] text-[#F4E5C2] font-display font-bold hover:bg-[#6B4423] hover:border-[#6B4423] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
-            <span className="absolute inset-0 w-0 bg-[#D4AF37]/20 transition-all duration-300 group-hover:w-full"></span>
-            <span className="relative">VIEW ALL MENTORS</span>
-            <svg
-              className="ml-2 w-5 h-5 relative transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              ></path>
-            </svg>
-          </button>
         </div>
       </div>
     </section>
@@ -117,78 +123,3 @@ const Mentors = () => {
 };
 
 export default Mentors;
-
-{
-  /* <TiltedCard */
-}
-// key={index}
-// imageSrc={mentor.imageSrc}
-// altText={`${mentor.name} - ${mentor.role}`}
-// captionText={mentor.name}
-// containerHeight="380px"
-// containerWidth='250px'
-// imageHeight="350px"
-// imageWidth="250px"
-// rotateAmplitude={1}
-// scaleOnHover={1.05}
-// showMobileWarning={false}
-// showTooltip={false}
-// displayOverlayContent={true}
-// overlayContent={
-//   <>
-//     <div className="absolute w-[250px] h-[350px] z-50 bg-gradient-to-t from-[#3E2C1D]/95 via-[#3E2C1D]/70 to-transparent opacity-0 flex flex-col justify-between items-start p-5 rounded-[15px] group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm">
-//       {/* Top section with emoji */}
-//       <div className="w-full">
-//         <span className="block text-5xl mb-2 drop-shadow-lg filter saturate-150 transform -translate-y-1 opacity-90 group-hover:opacity-100 transition-all duration-500">
-//           {mentor.emoji}
-//         </span>
-
-//         <div className="mt-2">
-//           <span className="inline-block px-3 py-1 bg-[#D4AF37] text-[#3E2C1D] text-xs font-semibold tracking-wider uppercase rounded-full font-display">
-//             {mentor.badge}
-//           </span>
-//         </div>
-//       </div>
-
-//       {/* Bottom section with details */}
-//       <div className="flex flex-col w-full">
-//         <h3 className="font-display text-2xl font-bold text-[#F4E5C2] mb-1 tracking-wide">
-//           {mentor.name}
-//         </h3>
-
-//         <p className="font-serif text-md text-[#D4AF37] mb-2 italic">
-//           {mentor.role}
-//         </p>
-
-//         <div className="bg-[#F4E5C2]/10 px-3 py-2 rounded-md mb-4 border-l-2 border-[#D4AF37]">
-//           <p className="text-sm text-[#F4E5C2] font-sans leading-snug">
-//             <span className="text-[#D4AF37] font-medium">Specialty:</span>{' '}
-//             {mentor.specialty}
-//           </p>
-//         </div>
-
-//         <div className="flex justify-between gap-2 w-full">
-//           <a
-//             href={`mailto:${mentor.name.toLowerCase().replace(' ', '.')}@calcuttahacks.com`}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="flex-1 text-center text-sm text-[#3E2C1D] py-2 bg-gradient-to-r from-[#D4AF37] to-[#F4E5C2] font-medium rounded-md transition-all duration-300 shadow-md hover:shadow-lg hover:from-[#F4E5C2] hover:to-[#D4AF37] tracking-wide"
-//           >
-//             Contact
-//           </a>
-
-//           <a
-//             href={mentor.linkedin}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="flex-1 text-center text-sm text-[#F4E5C2] py-2 bg-[#3E2C1D] border border-[#D4AF37] font-medium rounded-md transition-all duration-300 hover:bg-[#D4AF37]/20 hover:border-[#F4E5C2] hover:text-[#F4E5C2] tracking-wide"
-//           >
-//             LinkedIn
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-// </>
-// }
-// className="border-2 border-[#3E2C1D]/20 shadow-lg"
-// />
