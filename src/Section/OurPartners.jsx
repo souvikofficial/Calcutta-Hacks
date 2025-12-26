@@ -22,6 +22,11 @@ import dodo from '../../src/assets/Icon/dodo.webp';
 import n8n from '../../src/assets/Icon/n8n.webp';
 import unibee from '../../src/assets/Icon/unibee.webp';
 import trae from '../../src/assets/Icon/trae.webp';
+import dmv from '../../src/assets/Icon/dmv.webp';
+import oxday from '../../src/assets/Icon/0xday.webp';
+import osen from '../../src/assets/Icon/osen.webp';
+import notzero from '../../src/assets/Icon/notzero.webp';
+import tending from '../../src/assets/Icon/tending.webp';
 
 const categories = {
   diamondspn: {
@@ -107,6 +112,24 @@ const categories = {
         link: 'https://drop.org.in/',
         tagline: 'Master In-Demand Skills with Our Online Course & Secure Your Future!',
       },
+      {
+        name: '0x.Day',
+        logo: oxday,
+        link: 'https://www.linkedin.com/company/0xday/about/',
+        tagline: 'Transforming Tech Talent with SKILL PROTOCOL',
+      },
+      {
+        name: 'DMV Coretech',
+        logo: dmv,
+        link: 'https://dmvcoretech.com/',
+        tagline: 'Transform Your Business with Digital Innovation',
+      },
+      {
+        name: 'Not Zero',
+        logo: notzero,
+        link: '#',
+        tagline: '',
+      },
     ],
   },
   audioaiptn: {
@@ -151,6 +174,12 @@ const categories = {
         logo: interviewbuddy,
         link: 'https://interviewbuddy.net/',
         tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
+      },
+      {
+        name: 'Tending to Infinity Academy',
+        logo: tending,
+        link: 'https://tendingtoinfinityacademy.com/',
+        tagline: 'Empower your future with the courses designed to fit your choice.',
       },
     ],
   },
@@ -198,6 +227,12 @@ const categories = {
         logo: trae,
         link: 'https://www.trae.ai/',
         tagline: 'Ship Faster with TRAE',
+      },
+      {
+        name: 'OSEN',
+        logo: osen,
+        link: 'https://www.linkedin.com/company/osenofficial/',
+        tagline: 'A community that supports Tech Event like hackathons, and workshops.',
       },
     ],
   },
