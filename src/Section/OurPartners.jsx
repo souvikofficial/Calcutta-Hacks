@@ -20,6 +20,8 @@ import devfolio from '../../src/assets/Icon/devfolio.webp';
 import duality from '../../src/assets/Icon/duality.webp';
 import dodo from '../../src/assets/Icon/dodo.webp';
 import n8n from '../../src/assets/Icon/n8n.webp';
+import unibee from '../../src/assets/Icon/unibee.webp';
+import trae from '../../src/assets/Icon/trae.webp';
 
 const categories = {
   diamondspn: {
@@ -185,6 +187,18 @@ const categories = {
         link: 'https://gen.xyz/',
         tagline: 'For every website, everywhere.',
       },
+      {
+        name: 'UniBee',
+        logo: unibee,
+        link: 'https://unibee.dev/',
+        tagline: 'Decimate Your High Billing Costs',
+      },
+      {
+        name: 'Trae',
+        logo: trae,
+        link: 'https://www.trae.ai/',
+        tagline: 'Ship Faster with TRAE',
+      },
     ],
   },
 };
@@ -344,7 +358,7 @@ const OurPartners = () => {
         <SponsorCard category="utilityptn" />
 
         {/* Partner CTA */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
             Want to Sponsor us?
           </h3>
@@ -356,7 +370,7 @@ const OurPartners = () => {
           >
             Become a Sponsor
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
