@@ -1,8 +1,14 @@
 import '../App.css';
+import abhishek from '../assets/Judge-mentors/abhishek.webp'
+import devesh from '../assets/Judge-mentors/devesh.webp'
+import hridam from '../assets/Judge-mentors/hridam.webp'
+import anubhab from '../assets/Judge-mentors/anubhab.webp'
+import purnangshu from '../assets/Judge-mentors/purnangshu.webp'
+import avik from '../assets/Judge-mentors/avik.webp'
 
 export const Card = ({ children, className = 'bg-[#e1d7c3] ' }) => (
-  <div className={` border-4 border-[#3E2C1D] p-8 relative ${className}`}>
-    <div className="absolute top-2 left-2 right-2 bottom-2 border-2 border-[#6B4423] opacity-30 pointer-events-none"></div>
+  <div className={` border-4 border-[#3E2C1D] p-10 relative ${className}`}>
+    <div className="absolute top-3 left-3 right-3 bottom-3 border-2 border-[#6B4423] opacity-30 pointer-events-none"></div>
     {children}
   </div>
 );
@@ -10,29 +16,46 @@ export const Card = ({ children, className = 'bg-[#e1d7c3] ' }) => (
 const Judges = () => {
   const judges = [
     {
-      name: 'Arjun Roy',
-      role: 'VC & Operator',
-      badge: 'Impact & Scale',
-      img_url: 'https://tse2.mm.bing.net/th/id/OIP.H9UYen-_zre2XDocB14GZQHaEK?pid=Api&P=0&h=180',
+      name: 'Abhishek Mahto',
+      role: 'Founder & CEO at NOMOEX & MBT Ventures',
+      badge: 'Web3 & AI Investor',
+      img_url: abhishek,
+      linkedin: 'https://www.linkedin.com/in/abhishekmahto340/',
     },
     {
-      name: 'Dev Patel',
-      role: 'CTO',
-      badge: 'Architecture',
-      img_url:
-        'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      name: 'Devesh Tulshyan',
+      role: 'Systems Engineer',
+      badge: 'Top 1% Global TryHackMe',
+      img_url: devesh,
+      linkedin: 'https://www.linkedin.com/in/devesh-tulshyan-b674421a2/',
     },
     {
-      name: 'Priya Nair',
-      role: 'Professor',
-      badge: 'Research',
-      img_url: 'https://i.pinimg.com/736x/58/c9/c5/58c9c538f8ae7b1e132b584d5b007819.jpg',
+      name: 'Hridam Basu',
+      role: 'Founder & CTO at Rump Labs',
+      badge: 'Cryptography Research Engineer',
+      img_url: hridam,
+      linkedin: 'https://www.linkedin.com/in/hridam-basu/',
     },
     {
-      name: 'Ahaana Kapoor',
-      role: 'Founder',
-      badge: 'Product',
-      img_url: 'https://i.pinimg.com/originals/56/fe/c1/56fec125a824d4a1c4430abe9a1ef3b1.png',
+      name: 'Anubhab Saha',
+      role: 'Systems Engineer @ TCS-Prime',
+      badge: 'AWS, Cloud Computing',
+      img_url: anubhab,
+      linkedin: 'https://www.linkedin.com/in/anubhabsaha09/',
+    },
+    {
+      name: 'Purnangshu Roy',
+      role: 'AI Consultant at CSRBOX',
+      badge: 'Data Analytics and Senior Technical Trainer',
+      img_url: purnangshu,
+      linkedin: 'https://www.linkedin.com/in/purnangshu-roy-16380614/',
+    },
+    {
+      name: 'Avik Agarwala',
+      role: 'Systems Engineer @TCS',
+      badge: 'Previous System Software Engineer @AMI',
+      img_url: avik,
+      linkedin: 'https://www.linkedin.com/in/avikagarwala/',
     },
   ];
   const judge = [
@@ -54,55 +77,51 @@ const Judges = () => {
             Evaluating creativity, execution, and impact
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* ====== Coming Soon Cards ====== */}
-          {judge.map((j, i) => (
-            <div key={i} className="group [perspective:1000px]">
-              <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
-                <Card className="bg-[#ebdbb9]">
-                  <div className="flex flex-col items-center text-center py-16">
-                    <div className="font-display text-2xl font-bold text-[#3E2C1D]">
-                      {j.content}
+        <div className="flex flex-wrap justify-center gap-8">
+          {/* ====== Original Judge Cards ====== */}
+          
+          {judges.map((j, i) => (
+            <div key={i} className="group [perspective:1000px] w-full sm:w-[300px] lg:w-[320px]">
+              <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d] h-full">
+                <Card className="bg-[#ebdbb9] h-full flex flex-col justify-between">
+                  <div className="flex flex-col items-center text-center h-full">
+                    <div className="w-40 h-40 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-6 overflow-hidden">
+                      <img
+                        src={j.img_url}
+                        alt={`Image of judge ${j.name}`}
+                        className="w-full h-full object-cover rounded-full"
+                      />
                     </div>
+                    <div className="font-display text-2xl font-bold text-[#3E2C1D] mb-2">{j.name}</div>
+                    <div className="font-serif text-[#6B4423] mb-4">{j.role}</div>
+                    <span className="inline-block px-4 py-1.5 text-sm bg-[#3E2C1D1A] text-[#3E2C1D] rounded-full">
+                      {j.badge}
+                    </span>
+                    <a
+                      href={j.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center text-[#3E2C1D] hover:text-[#6B4423] transition-colors"
+                    >
+                      <span className="mr-2 font-bold">Connect</span>
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
                   </div>
                 </Card>
                 <div
-                  className="absolute inset-0 rounded-lg ring-1 ring-[#6B44234D] translate-y-2 blur-sm opacity-0 group-hover:opacity-100 transition"
+                  className="absolute inset-0 rounded-lg ring-1 ring-[#6B44234D] translate-y-2 blur-sm opacity-0 group-hover:opacity-100 transition pointer-events-none"
                   aria-hidden
                 ></div>
               </div>
             </div>
           ))}
-
-          {/* ====== Original Judge Cards ====== */}
-          {/*
-      {judges.map((j, i) => (
-        <div key={i} className="group [perspective:1000px]">
-          <div className="relative transform-gpu transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl [transform-style:preserve-3d]">
-            <Card className="bg-[#ebdbb9]">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-36 h-36 rounded-full bg-[#F4E5C266] border-2 border-[#3E2C1D] flex items-center justify-center mb-4 overflow-hidden">
-                  <img
-                    src={j.img_url}
-                    alt={`Image of judge ${j.name}`}
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
-                <div className="font-display text-2xl font-bold text-[#3E2C1D]">{j.name}</div>
-                <div className="font-serif text-[#6B4423]">{j.role}</div>
-                <span className="mt-3 inline-block px-3 py-1 text-sm bg-[#3E2C1D1A] text-[#3E2C1D] rounded-full">
-                  {j.badge}
-                </span>
-              </div>
-            </Card>
-            <div
-              className="absolute inset-0 rounded-lg ring-1 ring-[#6B44234D] translate-y-2 blur-sm opacity-0 group-hover:opacity-100 transition"
-              aria-hidden
-            ></div>
-          </div>
-        </div>
-      ))}
-      */}
+     
         </div>
       </div>
     </section>

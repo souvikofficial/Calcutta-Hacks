@@ -20,6 +20,13 @@ import devfolio from '../../src/assets/Icon/devfolio.webp';
 import duality from '../../src/assets/Icon/duality.webp';
 import dodo from '../../src/assets/Icon/dodo.webp';
 import n8n from '../../src/assets/Icon/n8n.webp';
+import unibee from '../../src/assets/Icon/unibee.webp';
+import trae from '../../src/assets/Icon/trae.webp';
+import dmv from '../../src/assets/Icon/dmv.webp';
+import oxday from '../../src/assets/Icon/0xday.webp';
+import osen from '../../src/assets/Icon/osen.webp';
+import notzero from '../../src/assets/Icon/notzero.webp';
+import tending from '../../src/assets/Icon/tending.webp';
 
 const categories = {
   diamondspn: {
@@ -105,6 +112,24 @@ const categories = {
         link: 'https://drop.org.in/',
         tagline: 'Master In-Demand Skills with Our Online Course & Secure Your Future!',
       },
+      {
+        name: '0x.Day',
+        logo: oxday,
+        link: 'https://www.linkedin.com/company/0xday/about/',
+        tagline: 'Transforming Tech Talent with SKILL PROTOCOL',
+      },
+      {
+        name: 'DMV Coretech',
+        logo: dmv,
+        link: 'https://dmvcoretech.com/',
+        tagline: 'Transform Your Business with Digital Innovation',
+      },
+      {
+        name: 'Not Zero',
+        logo: notzero,
+        link: '#',
+        tagline: '',
+      },
     ],
   },
   audioaiptn: {
@@ -150,6 +175,12 @@ const categories = {
         link: 'https://interviewbuddy.net/',
         tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
       },
+      {
+        name: 'Tending to Infinity Academy',
+        logo: tending,
+        link: 'https://tendingtoinfinityacademy.com/',
+        tagline: 'Empower your future with the courses designed to fit your choice.',
+      },
     ],
   },
   utilityptn: {
@@ -184,6 +215,24 @@ const categories = {
         logo: xyz,
         link: 'https://gen.xyz/',
         tagline: 'For every website, everywhere.',
+      },
+      {
+        name: 'UniBee',
+        logo: unibee,
+        link: 'https://unibee.dev/',
+        tagline: 'Decimate Your High Billing Costs',
+      },
+      {
+        name: 'Trae',
+        logo: trae,
+        link: 'https://www.trae.ai/',
+        tagline: 'Ship Faster with TRAE',
+      },
+      {
+        name: 'OSEN',
+        logo: osen,
+        link: 'https://www.linkedin.com/company/osenofficial/',
+        tagline: 'A community that supports Tech Event like hackathons, and workshops.',
       },
     ],
   },
@@ -344,7 +393,7 @@ const OurPartners = () => {
         <SponsorCard category="utilityptn" />
 
         {/* Partner CTA */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
             Want to Sponsor us?
           </h3>
@@ -356,7 +405,7 @@ const OurPartners = () => {
           >
             Become a Sponsor
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
