@@ -15,6 +15,18 @@ import magicui from '../../src/assets/Icon/magicui.webp';
 import nomoex from '../../src/assets/Icon/nomoex.webp';
 import decloudx from '../../src/assets/Icon/decloudx.webp';
 import requestly from '../../src/assets/Icon/requestly.webp';
+import aws from '../../src/assets/Icon/aws.webp';
+import devfolio from '../../src/assets/Icon/devfolio.webp';
+import duality from '../../src/assets/Icon/duality.webp';
+import dodo from '../../src/assets/Icon/dodo.webp';
+import n8n from '../../src/assets/Icon/n8n.webp';
+import unibee from '../../src/assets/Icon/unibee.webp';
+import trae from '../../src/assets/Icon/trae.webp';
+import dmv from '../../src/assets/Icon/dmv.webp';
+import oxday from '../../src/assets/Icon/0xday.webp';
+import osen from '../../src/assets/Icon/osen.webp';
+import notzero from '../../src/assets/Icon/notzero.webp';
+import tending from '../../src/assets/Icon/tending.webp';
 
 const categories = {
   diamondspn: {
@@ -39,6 +51,17 @@ const categories = {
       }
     ],
   },
+  inasw: {
+    name: 'In association with',
+    partners: [
+      {
+        name: 'AWS',
+        logo: aws,
+        link: 'https://aws.training/',
+        tagline: 'Build your future in the AWS Cloud.',
+      }
+    ],
+  },
   trackspn: {
     name: 'Track Sponsors',
     partners: [
@@ -54,10 +77,22 @@ const categories = {
     name: 'Silver Sponsors',
     partners: [
       {
+        name: 'Devfolio',
+        logo: devfolio,
+        link: 'https://devfolio.co/',
+        tagline: 'We love software and the people who build it.',
+      },
+      {
         name: 'ETH India',
         logo: ETH,
         link: 'https://ethindia2024.devfolio.co/overview',
         tagline: 'Empowering the future of hackathons',
+      },
+      {
+        name: 'Duality',
+        logo: duality,
+        link: 'https://duality.ai/',
+        tagline: 'Virtual Worlds for Solving Real Problems',
       },
       {
         name: 'Axicov',
@@ -76,6 +111,24 @@ const categories = {
         logo: drop,
         link: 'https://drop.org.in/',
         tagline: 'Master In-Demand Skills with Our Online Course & Secure Your Future!',
+      },
+      {
+        name: '0x.Day',
+        logo: oxday,
+        link: 'https://www.linkedin.com/company/0xday/about/',
+        tagline: 'Transforming Tech Talent with SKILL PROTOCOL',
+      },
+      {
+        name: 'DMV Coretech',
+        logo: dmv,
+        link: 'https://dmvcoretech.com/',
+        tagline: 'Transform Your Business with Digital Innovation',
+      },
+      {
+        name: 'Not Zero',
+        logo: notzero,
+        link: '#',
+        tagline: '',
       },
     ],
   },
@@ -122,11 +175,29 @@ const categories = {
         link: 'https://interviewbuddy.net/',
         tagline: 'AI-powered mock interviews, expert feedback, and personalized coaching.',
       },
+      {
+        name: 'Tending to Infinity Academy',
+        logo: tending,
+        link: 'https://tendingtoinfinityacademy.com/',
+        tagline: 'Empower your future with the courses designed to fit your choice.',
+      },
     ],
   },
   utilityptn: {
     name: 'Utility Partners',
     partners: [
+      {
+        name: 'Dodo Payments',
+        logo: dodo,
+        link: 'https://dodopayments.com/',
+        tagline: 'Payments & Billing Platform for SaaS, AI and Digital Products.',
+      },
+      {
+        name: 'n8n',
+        logo: n8n,
+        link: 'https://n8n.io/',
+        tagline: 'Flexible AI workflow automation for technical teams.',
+      },
       {
         name: 'Beeceptor',
         logo: beeceptor,
@@ -138,17 +209,30 @@ const categories = {
         logo: magicui,
         link: 'https://pro.magicui.design/',
         tagline: 'UI library for Design Engineers.',
-      }
-    ],
-  },
-  domainptn: {
-    name: 'Domain Partner',
-    partners: [
+      },
       {
         name: 'Gen xyz',
         logo: xyz,
         link: 'https://gen.xyz/',
         tagline: 'For every website, everywhere.',
+      },
+      {
+        name: 'UniBee',
+        logo: unibee,
+        link: 'https://unibee.dev/',
+        tagline: 'Decimate Your High Billing Costs',
+      },
+      {
+        name: 'Trae',
+        logo: trae,
+        link: 'https://www.trae.ai/',
+        tagline: 'Ship Faster with TRAE',
+      },
+      {
+        name: 'OSEN',
+        logo: osen,
+        link: 'https://www.linkedin.com/company/osenofficial/',
+        tagline: 'A community that supports Tech Event like hackathons, and workshops.',
       },
     ],
   },
@@ -287,6 +371,9 @@ const OurPartners = () => {
         {/* Platinum Sponsor */}
         <SponsorCard category="platinumspn" />
 
+        {/* In Association With */}
+        <SponsorCard category="inasw" />
+
         {/* Track Sponsor */}
         <SponsorCard category="trackspn" />
 
@@ -305,11 +392,8 @@ const OurPartners = () => {
         {/* AI Utility Partner */}
         <SponsorCard category="utilityptn" />
 
-        {/* Domain Partner */}
-        <SponsorCard category="domainptn" />
-
         {/* Partner CTA */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h3 className="font-display text-2xl font-bold text-[#332518] mb-8">
             Want to Sponsor us?
           </h3>
@@ -321,7 +405,7 @@ const OurPartners = () => {
           >
             Become a Sponsor
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
